@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Welcome to My Personal Website</h1>
+    <img src="{{ url_for('static', filename='your-photo.jpg') }}" alt="Your Photo">
+    <p>
+        Hi there! I'm Mike, a passionate software developer with a focus on web development and Python programming. I love turning ideas into elegant and functional digital solutions.
+    </p>
+    <p>
+        On this website, you'll discover my journey in the world of technology, my portfolio of projects, and insightful blog posts that I can't wait to share with you.
+    </p>
+    <div>
+        <a href="{{ url_for('about') }}">Learn More About Me</a>
+        <a href="{{ url_for('portfolio') }}">Explore My Portfolio</a>
+        <a href="{{ url_for('blog') }}">Read My Blog</a>
+        <a href="{{ url_for('contact') }}">Get in Touch</a>
+    </div>
+{% endblock %}
